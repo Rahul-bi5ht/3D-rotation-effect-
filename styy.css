@@ -1,0 +1,60 @@
+html body{
+  margin: 0;
+  padding: 0;
+  background: url(https://wallpapercat.com/w/full/d/d/2/5818500-3840x1920-desktop-dual-screen-laptop-background-image.jpg);
+}
+#top{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 8px hsl(239, 69%, 61%);
+  background: url();
+
+}
+.banner{
+  margin-top: 50px;
+  height: 100vh;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.banner .product{
+  height: 500px;
+  position: absolute;
+  bottom: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: 0.7s;
+  --left: 0px;
+  display: flex;
+  top: 10px;
+}
+
+.banner .product .soda{
+    background: 
+    var(--url) var(--left) 0,
+    url(mockup.png);
+    background-size: auto  100%;
+    width: 280px;
+    aspect-ratio: 1 / 2;
+    background-blend-mode: multiply;
+    mask-image: url(mockup.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  } 
+
+  .banner .product:hover{
+    --left: -590px;
+    transform: translateX(-50%)translateY(-120px);
+  }
+
+  .banner .product .soda:nth-child(2){
+    opacity: 0;
+  }
+
+  .banner .product:hover .soda:nth-child(2){
+    opacity: 1;
+  }
